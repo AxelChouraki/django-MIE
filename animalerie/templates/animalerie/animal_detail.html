@@ -1,8 +1,11 @@
 {% block content %}
 
     <div class="animal">
-        <h2><a href="{% url 'animal_detail' pk=animal.pk %}">{{ animal.id_animal }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <h2>{{ animal.id_animal }}</h2>
+        <h3>Etat : {{ animal.etat }}</h3>
+        <h3>Type : {{ animal.type }}</h3>
+        <h3>Race : {{ animal.race }}</h3>
+        <h3>Lieu : {{ animal.lieu|linebreaksbr }}</h3>
     </div>
     
 {% endblock %}

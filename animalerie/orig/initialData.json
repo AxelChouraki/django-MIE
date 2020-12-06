@@ -1,0 +1,80 @@
+[
+  {
+    "model": "animalerie.equipement",
+    "pk": "liti\u00e8re",
+    "fields": {
+      "disponibilite": "libre"
+    }
+  },
+  {
+    "model": "animalerie.equipement",
+    "pk": "mangeoire",
+    "fields": {
+      "disponibilite": "occup\u00e9"
+    }
+  },
+  {
+    "model": "animalerie.equipement",
+    "pk": "roue",
+    "fields": {
+      "disponibilite": "libre"
+    }
+  },
+  {
+    "model": "animalerie.equipement",
+    "pk": "nid",
+    "fields": {
+      "disponibilite": "occup\u00e9"
+    }
+  },
+  {
+    "model": "animalerie.animal",
+    "pk": "Tic",
+    "fields": {
+      "race": "tamia",
+      "type": "rongeur",
+      "etat": "affam\u00e9",
+      "lieu": "liti\u00e8re"
+    }
+  },
+  {
+    "model": "animalerie.animal",
+    "pk": "Tac",
+    "fields": {
+      "race": "tamia",
+      "type": "rongeur",
+      "etat": "affam\u00e9",
+      "lieu": "liti\u00e8re"
+    }
+  },
+  {
+    "model": "animalerie.animal",
+    "pk": "Patrick",
+    "fields": {
+      "race":"hamster",
+      "type":"rongeur",
+      "etat":"affam\u00e9",
+      "lieu":"liti\u00e8re"
+    }
+  },
+  {
+    "model": "animalerie.animal",
+    "pk": "Totoro",
+    "fields": {
+      "race":"ili pika",
+      "type":"rongeur",
+      "etat":"repus",
+      "lieu":"mangeoire"
+    }
+  },
+  {
+    "model": "animalerie.animal",
+    "pk": "Pocahontas",
+    "fields": {
+      "race":"opossum",
+      "type":"marsupial",
+      "etat":"endormi",
+      "lieu":"nid"
+    }
+  }
+]

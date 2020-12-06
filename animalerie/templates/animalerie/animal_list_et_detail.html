@@ -1,18 +1,23 @@
 {% extends 'animalerie/base.html' %}
 
+
 <!-- Liste des animaux -->
 {% block content %}
 
-    <div>{{ msg }}</div>
+    <div style="color: red">{{ msg }}</div>
 
     {% for animal in animaux %}
         <div class="animal">
             <h2><a href="{% url 'animal_detail' id_animal=animal.id_animal %}">{{ animal.id_animal }}</a></h2>
+            <p>Etat : {{ animal.etat }}</p>
+            <p>Type : {{ animal.type }}</p>
+            <p>Race : {{ animal.race }}</p>
+            <p>Lieu : {{ animal.lieu|linebreaksbr }}</p>
         </div>
     {% endfor %}
 
     <div>
-        <a class="btn-primary" href="animal_list_et_detail.html"{>Afficher le détail des animaux</a>
+        <a class="btn-primary" href="animal_list.html"{>Ne pas afficher le détail des animaux</a>
     </div>
 
 {% endblock %}
@@ -20,7 +25,7 @@
 <!-- Formulaire -->
 {% block formulaire %}
 
-    <form action="animal_list.html" method="post">{% csrf_token %}
+    <form action="animal_list_et_detail.html" method="post">{% csrf_token %}
 
         <h1>Sélectionner un animal</h1>
 
@@ -65,4 +70,3 @@
     </form>
 
 {% endblock %}
-
